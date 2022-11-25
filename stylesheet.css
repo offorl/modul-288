@@ -1,3 +1,10 @@
+/*#592C1C
+#733B27
+#A67563
+#D9B1A3
+#F2F2F2
+ */
+
 @import url('https://rsms.me/inter/inter-ui.css');
 ::selection {
     background: #2D2F36;
@@ -9,13 +16,13 @@
     background: #2D2F36;
 }
 body {
-    background: white;
+    background: #808080;
     font-family: 'Inter UI', sans-serif;
     margin: 0;
     padding: 20px;
 }
 .page {
-    background: #e2e2e5;
+    background: #808080;
     display: flex;
     flex-direction: column;
     height: calc(100% - 40px);
@@ -44,7 +51,7 @@ body {
     }
 }
 .left {
-    background: white;
+    background: #F2F2F2;
     height: calc(100% - 40px);
     top: 20px;
     position: relative;
@@ -58,19 +65,28 @@ body {
         max-height: 270px;
     }
 }
-.login {
+.begruessung {
     font-size: 50px;
     font-weight: 900;
     margin: 50px 40px 40px;
 }
-.eula {
+.infotext {
     color: #999;
     font-size: 14px;
     line-height: 1.5;
     margin: 40px;
 }
+
+.verlauf{
+    height: 4px;
+    width: 80%;
+    background-color: #4D4DFF;
+    background: linear-gradient(to right, #faf0e6, #592C1C, #faf0e6);
+    border: none;
+    polstion: absolute;
+}
 .right {
-    background: #474A59;
+    background:#faf0e6;
     box-shadow: 0px 0px 40px 16px rgba(0,0,0,0.22);
     color: #F1F1F2;
     position: relative;
@@ -88,6 +104,7 @@ svg {
     position: absolute;
     width: 320px;
 }
+
 path {
     fill: none;
     stroke: url(#linearGradient);;
