@@ -3,6 +3,7 @@
 #A67563
 #D9B1A3
 #F2F2F2
+#EEE1C6
  */
 
 @import url('https://rsms.me/inter/inter-ui.css');
@@ -78,10 +79,10 @@ body {
 }
 
 .verlauf{
-    height: 4px;
-    width: 80%;
+    height: 3px;
+    width: 100%;
     background-color: #4D4DFF;
-    background: linear-gradient(to right, #faf0e6, #592C1C, #faf0e6);
+    background: linear-gradient(to right, #592C1C, #EEE1C6,#592C1C);
     border: none;
     polstion: absolute;
 }
