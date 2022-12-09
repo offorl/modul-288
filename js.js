@@ -14,6 +14,7 @@ document.querySelector('#email').addEventListener('focus', function(e) {
             easing: 'easeOutQuart'
         }
     });
+
 });
 document.querySelector('#password').addEventListener('focus', function(e) {
     if (current) current.pause();
