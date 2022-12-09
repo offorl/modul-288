@@ -5,12 +5,12 @@ document.querySelector('#email').addEventListener('focus', function(e) {
         targets: 'path',
         strokeDashoffset: {
             value: 0,
-            duration: 700,
+            duration: 650,
             easing: 'easeOutQuart'
         },
         strokeDasharray: {
             value: '240 1386',
-            duration: 700,
+            duration: 650,
             easing: 'easeOutQuart'
         }
     });
@@ -21,13 +21,15 @@ document.querySelector('#password').addEventListener('focus', function(e) {
         targets: 'path',
         strokeDashoffset: {
             value: -336,
-            duration: 700,
-            easing: 'easeOutQuart'
+            easing: 'easeOutQuart',
+            duration: 650,
+
         },
         strokeDasharray: {
-            value: '240 1386',
-            duration: 700,
             easing: 'easeOutQuart'
+            value: '240 1386',
+            duration: 650,
+
         }
     });
 });
@@ -37,13 +39,15 @@ document.querySelector('#submit').addEventListener('focus', function(e) {
         targets: 'path',
         strokeDashoffset: {
             value: -730,
+            easing: 'easeOutQuart',
             duration: 700,
-            easing: 'easeOutQuart'
+
         },
         strokeDasharray: {
+            easing: 'easeOutQuart'
             value: '530 1386',
             duration: 700,
-            easing: 'easeOutQuart'
+
         }
     });
 });
