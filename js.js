@@ -52,3 +52,21 @@ document.querySelector('#submit').addEventListener('focus', function(e) {
         }
     });
 });
+
+let inputElt = document.getElementById('input');
+let btn = document.getElementById('button');
+
+inputElt.addEventListener("input", function(){
+    btn.disabled = (this.value === '');
+})
+
+
+
+/**
+const button = document.getElementById('submit')
+// Disable the selected button in JavaScript based on a condition
+// If the button text is 'Can you click me?'
+if (button.innerText === 'submit') {
+    button.disabled = true
+}
+ **/

@@ -137,8 +137,15 @@ input::-moz-focus-inner {
 }
 #submit:focus {
     color: #A67B5C;
-
 }
+
 #submit:active {
     color: #A67B5C;
+}
+
+#submit:hover{
+    color: #A67B5C;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
 }
