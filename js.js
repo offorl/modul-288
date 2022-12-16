@@ -27,7 +27,7 @@ document.querySelector('#password').addEventListener('focus', function(e) {
 
         },
         strokeDasharray: {
-            easing: 'easeOutQuart'
+            easing: 'easeOutQuart',
             value: '240 1386',
             duration: 650,
 
@@ -35,6 +35,7 @@ document.querySelector('#password').addEventListener('focus', function(e) {
     });
 });
 document.querySelector('#submit').addEventListener('focus', function(e) {
+
     if (current) current.pause();
     current = anime({
         targets: 'path',
@@ -45,7 +46,7 @@ document.querySelector('#submit').addEventListener('focus', function(e) {
 
         },
         strokeDasharray: {
-            easing: 'easeOutQuart'
+            easing: 'easeOutQuart',
             value: '530 1386',
             duration: 700,
 
@@ -60,7 +61,17 @@ inputElt.addEventListener("input", function(){
     btn.disabled = (this.value === '');
 })
 
+btn.onsubmit( )
 
+var submitLogin = function() {
+    let email = document.querySelector("#email")
+    let password = document.querySelector("#passwort")
+
+    if (email.Value == "admin@google.com" && password.Value == "admin1234") {
+        window.href = http://localhost:63342/modul-288/landingpage.html
+    }
+
+}
 
 /**
 const button = document.getElementById('submit')
