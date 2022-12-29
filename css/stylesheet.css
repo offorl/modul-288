@@ -1,0 +1,159 @@
+/* farebn hex code
+#592C1C
+#733B27
+#A67563
+#D9B1A3
+#F2F2F2
+#EEE1C6
+ */
+
+/*background*/
+
+body {
+    background: #104730;
+    font-family: 'Inter UI', sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+.page {
+    background: #104730;
+    display: flex;
+    flex-direction: column;
+    /*dass das eingabefeld in der mitte ist*/
+    height: calc(100% - 40px);
+    width: calc(100% - 40px);
+    position: absolute;
+    place-content: center;
+
+}
+
+@media (max-width: 767px) {
+    .page {
+        height: auto;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+.container {
+    display: flex;
+    height: 320px;
+    margin: 0 auto;
+    width: 640px;
+}
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column;
+        height: 630px;
+        width: 320px;
+    }
+}
+
+
+/*inhalt weisse box*/
+
+.left {
+    background: #F2F2F2;
+    height: calc(100% - 40px);
+    top: 20px;
+    position: relative;
+    width: 50%;
+}
+@media (max-width: 767px) {
+    .left {
+        height: 100%;
+        left: 20px;
+        width: calc(100% - 40px);
+        max-height: 270px;
+    }
+}
+.begruessung {
+    color: #104730;
+    font-size: 50px;
+    font-weight: 900;
+    margin: 50px 40px 40px;
+}
+.infotext {
+    color: #104730;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 40px;
+}
+
+
+
+/*inhalt beige box*/
+
+.verlauf{
+    height: 3px;
+    width: 100%;
+    background-color: #4D4DFF;
+    background: linear-gradient(to right, #104730, #A67B5C, #9FAA89);
+    border: none;
+    polstion: absolute;
+}
+.right {
+    background:#C6C5AC;
+    box-shadow: 0px 0px 40px 16px rgba(0,0,0,0.22);
+    color: #F1F1F2;
+    position: relative;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 767px) {
+    .right {
+        flex-shrink: 0;
+        height: 100%;
+        width: 100%;
+        max-height: 350px;
+    }
+}
+
+.form {
+    margin: 40px;
+    position: absolute;
+}
+label {
+    color:  #104730;
+    display: block;
+    font-size: 14px;
+    height: 16px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+input {
+    background: transparent;
+    border: 0;
+    color: #592C1C;
+    font-size: 20px;
+    height: 30px;
+    line-height: 30px;
+    outline: none !important;
+    width: 100%;
+}
+
+/*button*/
+#submit {
+    color: #104730;
+    margin-top: 40px;
+    transition: color 300ms;
+}
+/*das man etwas im imput eingeben kann*/
+#submit:active {
+    color: #104730;
+}
+/*button hover effect*/
+#submit:hover{
+    color: #104730;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+/*landingpage*/
+
+.img{
+    width: 75%;
+}
