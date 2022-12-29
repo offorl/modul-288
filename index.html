@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <title>index</title>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
-    <script src="js.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/stylesheet.css" />
+    <script src="../js/js.js"></script>
 </head>
 <body>
+
 
 <div class="page">
     <div class="container">
 
+<!--weisser block mit einführungstext -->
         <div class="left">
             <div class="begruessung">Hallo!</div>
             <div class="infotext">Logge dich jetzt in deinen Account ein und entdecke neues an der BZZ.</div>
         </div>
 
+<!--beiger block mit inputfelder -->
         <div class="right">
+
+ <!--formul mit den inputfelder username und passwort-->
             <div class="form">
                 <label for="email">E-Mail Adresse</label>
                 <input type="email" id="email">
@@ -24,15 +30,12 @@
                 <label for="passwort">Passwort</label>
                 <input type="passwort" id="passwort">
                 <hr class="verlauf">
-<!--
-                <input placeholder="Enter some text" name="name" id='input'/>
-                <button id='button' disabled>Réserver</button>
--->
-                <span onclick ="goToPage('http://localhost:63342/modul-288/landingpage.html?_ijt=argrqkqul2eq88cgirevk5cogd&_ij_reload=RELOAD_ON_SAVE');">
+
+<!--button-->
+                <span onclick ="goToPage('http://localhost:63342/modul-288/html/landingpage.html?_ijt=ljpsucs2r4e315da8m6ahho3vv&_ij_reload=RELOAD_ON_SAVE');">
                 <input type="submit" id="submit" value="Submit" onclick="validate(); "/>
                 </span>
 
-                <!--<input type="submit" id="submit" value="Submit" onclick="submitLogin()">-->
             </div>
         </div>
     </div>
