@@ -16,6 +16,34 @@ function validate(){
     }
 }
 
+
+/*
+Object-literal:
+
+var credentials = {
+    username: "sutera",
+    password: "bzzsus123",
+};
+
+var userInputUsername = prompt("Please enter your username:");
+var userInputPassword = prompt("Please enter your password:");
+
+if (userInputUsername === credentials.username && userInputPassword === credentials.password) {
+    console.log("Access granted!");
+} else {
+    console.log("Access denied!");
+}
+
+
+ */
+
+
+
+
+
+
+
+
 /*
 if(username =="demirv" && password =="bzzlp123" || username =="sutera" && password =="bzzsus123" ){
     function goToPage() {
