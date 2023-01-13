@@ -1,30 +1,18 @@
 
 var login = true;
 
+
 function validate(){
     var username=document.getElementById ("email").value;
     var password=document.getElementById("passwort").value;
+    if(username == "demirv" && password == "bzzlp123" || username == "sutera" && password == "bzzsus123" ){
+        alert("login successfully");
+        window.location = "http://localhost:63342/modul-288/html/landingpage.html?_ijt=ljpsucs2r4e315da8m6ahho3vv&_ij_reload=RELOAD_ON_SAVE";
+    }
 
-
-if(username =="demirv" && password =="bzzlp123" || username =="sutera" && password =="bzzsus123" ){
-    alert("login successfully");
-    login = true;
-    /*
-    return false;
-    */
-
-}
-else{
-    alert("login failed");
-    login = false;
-}
-
-}
-
-if (login == true) {
-    function goToPage(url) {
-        window.location = "http://localhost:63342/modul-288/html/landingpage.html?_ijt=ljpsucs2r4e315da8m6ahho3vv&_ij_reload=RELOAD_ON_SAVE" ;
-
+    else{
+        alert("login failed");
+        login = false;
     }
 }
 
