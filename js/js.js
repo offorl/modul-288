@@ -16,6 +16,27 @@ function validate(){
     }
 }
 
+//Definierte User als Klassen:
+
+
+class User {
+    constructor(username, password) {
+        this.username = username;
+        this.password = password;
+    }
+
+    daten() {
+        console.log(`Username ${this.username} und dazugehöriges Passwort: ${this.password} `);
+    }
+}
+
+var user1 = new User("sutera", "bzzsus123");
+user1.daten();
+
+var user2 = new User("demirv", "bzzlp123");
+user2.daten();
+
+
 
 /*
 Object-literal:
