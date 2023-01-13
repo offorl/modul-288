@@ -25,6 +25,7 @@ class User {
         this.password = password;
     }
 
+
     daten() {
         console.log(`Username ${this.username} und dazugehöriges Passwort: ${this.password} `);
     }
