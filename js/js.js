@@ -1,10 +1,10 @@
 
 
 
-var login = true;
+let login = true;
 
 // JSON-Datei mit zulässigen Benutzernamen und Passwörtern
-var users = {
+let users = {
     "users": [
         {
             "username": "demirv",
@@ -18,11 +18,11 @@ var users = {
 };
 
 function validate() {
-    var username = document.getElementById("email").value;
-    var password = document.getElementById("passwort").value;
+    let username = document.getElementById("email").value;
+    let password = document.getElementById("passwort").value;
 
     // Durchlaufe die Liste der zulässigen Benutzer
-    for (var i = 0; i < users.users.length; i++) {
+    for (let i = 0; i < users.users.length; i++) {
         if (username == users.users[i].username && password == users.users[i].password) {
             alert("login successfully");
             window.location = "http://localhost:63342/modul-288/html/landingpage.html?_ijt=ljpsucs2r4e315da8m6ahho3vv&_ij_reload=RELOAD_ON_SAVE";
@@ -33,7 +33,10 @@ function validate() {
     // Wenn die Schleife beendet ist, ohne dass ein zulässiger Benutzer gefunden wurde
     alert("login failed");
     login = false;
-}
+};
+
+//JSON Daten ausgeben (object)
+console.log(`Daten: ${users}`);
 
 
 /*
@@ -56,7 +59,7 @@ function validate(){
 }
 
 */
-*/
+
 
 
 //Definierte User als Klassen:
@@ -72,10 +75,10 @@ class User {
     }
 }
 
-var user1 = new User("sutera", "bzzsus123");
+let user1 = new User("sutera", "bzzsus123");
 user1.daten();
 
-var user2 = new User("demirv", "bzzlp123");
+let user2 = new User("demirv", "bzzlp123");
 user2.daten();
 
 
