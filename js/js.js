@@ -1,4 +1,42 @@
 
+
+
+var login = true;
+
+// JSON-Datei mit zulässigen Benutzernamen und Passwörtern
+var users = {
+    "users": [
+        {
+            "username": "demirv",
+            "password": "bzzlp123"
+        },
+        {
+            "username": "sutera",
+            "password": "bzzsus123"
+        }
+    ]
+};
+
+function validate() {
+    var username = document.getElementById("email").value;
+    var password = document.getElementById("passwort").value;
+
+    // Durchlaufe die Liste der zulässigen Benutzer
+    for (var i = 0; i < users.users.length; i++) {
+        if (username == users.users[i].username && password == users.users[i].password) {
+            alert("login successfully");
+            window.location = "http://localhost:63342/modul-288/html/landingpage.html?_ijt=ljpsucs2r4e315da8m6ahho3vv&_ij_reload=RELOAD_ON_SAVE";
+            return;
+        }
+    }
+
+    // Wenn die Schleife beendet ist, ohne dass ein zulässiger Benutzer gefunden wurde
+    alert("login failed");
+    login = false;
+}
+
+
+/*
 var login = true;
 
 
@@ -17,9 +55,11 @@ function validate(){
     }
 }
 
+*/
+*/
+
+
 //Definierte User als Klassen:
-
-
 class User {
     constructor(username, password) {
         this.username = username;
